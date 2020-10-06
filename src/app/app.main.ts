@@ -1,3 +1,5 @@
+import * as angular from 'angular';
+
 angular
   .module("codecraft", [
     "ngResource",
@@ -11,10 +13,10 @@ angular
     "ui.router"
   ])
   .config(function(
-    $httpProvider,
-    $resourceProvider,
-    laddaProvider,
-    $datepickerProvider
+    $httpProvider: any,
+    $resourceProvider: any,
+    laddaProvider: {setOption: (arg0: {style: string;}) => void;},
+    $datepickerProvider: {defaults: any;}
   ) {
     laddaProvider.setOption({
       style: "expand-right"

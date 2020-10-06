@@ -1,3 +1,5 @@
+import * as angular from 'angular';
+
 angular
   .module("codecraft")
   .controller("PersonCreateController", function(
@@ -14,5 +16,4 @@ angular
         $state.go("list");
       });
     };
-  });
-  
+  })
